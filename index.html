@@ -1,1 +1,345 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#111b22] dark group/design-root overflow-x-hidden" style='font-family: Lexend, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#243847] px-10 py-3">
+          <div class="flex items-center gap-8">
+            <div class="flex items-center gap-4 text-white">
+              <div class="size-4">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">WeatherWise</h2>
+            </div>
+            <div class="flex items-center gap-9">
+              <a class="text-white text-sm font-medium leading-normal" href="#">Today</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Hourly</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">10-day</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Weekend</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Maps</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">News</a>
+            </div>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <label class="flex flex-col min-w-40 !h-10 max-w-64">
+              <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                <div
+                  class="text-[#93b2c8] flex border-none bg-[#243847] items-center justify-center pl-4 rounded-l-xl border-r-0"
+                  data-icon="MagnifyingGlass"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                    ></path>
+                  </svg>
+                </div>
+                <input
+                  placeholder="Search"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border-none bg-[#243847] focus:border-none h-full placeholder:text-[#93b2c8] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                  value=""
+                />
+              </div>
+            </label>
+            <button
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#243847] text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+            >
+              <div class="text-white" data-icon="Gear" data-size="20px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm88-29.84q.06-2.16,0-4.32l14.92-18.64a8,8,0,0,0,1.48-7.06,107.21,107.21,0,0,0-10.88-26.25,8,8,0,0,0-6-3.93l-23.72-2.64q-1.48-1.56-3-3L186,40.54a8,8,0,0,0-3.94-6,107.71,107.71,0,0,0-26.25-10.87,8,8,0,0,0-7.06,1.49L130.16,40Q128,40,125.84,40L107.2,25.11a8,8,0,0,0-7.06-1.48A107.6,107.6,0,0,0,73.89,34.51a8,8,0,0,0-3.93,6L67.32,64.27q-1.56,1.49-3,3L40.54,70a8,8,0,0,0-6,3.94,107.71,107.71,0,0,0-10.87,26.25,8,8,0,0,0,1.49,7.06L40,125.84Q40,128,40,130.16L25.11,148.8a8,8,0,0,0-1.48,7.06,107.21,107.21,0,0,0,10.88,26.25,8,8,0,0,0,6,3.93l23.72,2.64q1.49,1.56,3,3L70,215.46a8,8,0,0,0,3.94,6,107.71,107.71,0,0,0,26.25,10.87,8,8,0,0,0,7.06-1.49L125.84,216q2.16.06,4.32,0l18.64,14.92a8,8,0,0,0,7.06,1.48,107.21,107.21,0,0,0,26.25-10.88,8,8,0,0,0,3.93-6l2.64-23.72q1.56-1.48,3-3L215.46,186a8,8,0,0,0,6-3.94,107.71,107.71,0,0,0,10.87-26.25,8,8,0,0,0-1.49-7.06Zm-16.1-6.5a73.93,73.93,0,0,1,0,8.68,8,8,0,0,0,1.74,5.48l14.19,17.73a91.57,91.57,0,0,1-6.23,15L187,173.11a8,8,0,0,0-5.1,2.64,74.11,74.11,0,0,1-6.14,6.14,8,8,0,0,0-2.64,5.1l-2.51,22.58a91.32,91.32,0,0,1-15,6.23l-17.74-14.19a8,8,0,0,0-5-1.75h-.48a73.93,73.93,0,0,1-8.68,0,8,8,0,0,0-5.48,1.74L100.45,215.8a91.57,91.57,0,0,1-15-6.23L82.89,187a8,8,0,0,0-2.64-5.1,74.11,74.11,0,0,1-6.14-6.14,8,8,0,0,0-5.1-2.64L46.43,170.6a91.32,91.32,0,0,1-6.23-15l14.19-17.74a8,8,0,0,0,1.74-5.48,73.93,73.93,0,0,1,0-8.68,8,8,0,0,0-1.74-5.48L40.2,100.45a91.57,91.57,0,0,1,6.23-15L69,82.89a8,8,0,0,0,5.1-2.64,74.11,74.11,0,0,1,6.14-6.14A8,8,0,0,0,82.89,69L85.4,46.43a91.32,91.32,0,0,1,15-6.23l17.74,14.19a8,8,0,0,0,5.48,1.74,73.93,73.93,0,0,1,8.68,0,8,8,0,0,0,5.48-1.74L155.55,40.2a91.57,91.57,0,0,1,15,6.23L173.11,69a8,8,0,0,0,2.64,5.1,74.11,74.11,0,0,1,6.14,6.14,8,8,0,0,0,5.1,2.64l22.58,2.51a91.32,91.32,0,0,1,6.23,15l-14.19,17.74A8,8,0,0,0,199.87,123.66Z"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDWPHq8rz3rwAZTNmVG0zVhv_LWPv02uYoW4bbGZNefN4GvWVDQTKFfNWx-XLqdNqN2NocLQ4ghfGPONTkBdcAgIN_LEMztPboRiYSJqSRfr-fv4fJo1GaAvMpkFJom84xiB2aJbPSgXC2klLD9qhR1-zjNt9RnUsBl0NdYaIcZA1jjBuvI7hABFS6aEX8KzCcvwN0XzN0paT03QZ7JTkVXr1R0T5lJv6mckD48PDLWLf1JpZnl0ooilaBj0e6gIWlkPRWZFMdce-zF");'
+            ></div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="px-4 py-3">
+              <label class="flex flex-col min-w-40 h-12 w-full">
+                <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                  <div
+                    class="text-[#93b2c8] flex border-none bg-[#243847] items-center justify-center pl-4 rounded-l-xl border-r-0"
+                    data-icon="MagnifyingGlass"
+                    data-size="24px"
+                    data-weight="regular"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <input
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border-none bg-[#243847] focus:border-none h-full placeholder:text-[#93b2c8] px-4 rounded-r-none border-r-0 pr-2 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                    value="San Francisco"
+                  />
+                  <div class="flex items-center justify-center rounded-r-xl border-l-0 border-none bg-[#243847] pr-2 pr-4">
+                    <button
+                      class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl bg-transparent text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] h-auto min-w-0 px-0"
+                    >
+                      <div class="text-[#93b2c8]" data-icon="XCircle" data-size="24px" data-weight="regular">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                          <path
+                            d="M165.66,101.66,139.31,128l26.35,26.34a8,8,0,0,1-11.32,11.32L128,139.31l-26.34,26.35a8,8,0,0,1-11.32-11.32L116.69,128,90.34,101.66a8,8,0,0,1,11.32-11.32L128,116.69l26.34-26.35a8,8,0,0,1,11.32,11.32ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <h1 class="text-white tracking-light text-[32px] font-bold leading-tight px-4 text-left pb-3 pt-6">Today</h1>
+            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">Mostly clear. High 72F. Winds light and variable.</p>
+            <div class="flex w-full grow bg-[#111b22] @container p-4">
+              <div class="w-full gap-1 overflow-hidden bg-[#111b22] @[480px]:gap-2 aspect-[3/2] rounded-xl flex">
+                <div
+                  class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDH-N6OyeGg5x5noWUM_btv_DPMiDwD6LMgk75VDxI0IVORkqMxJtsCQV03Abm9givt-IqpXRbr-8QET-7lBtWrvb4zyrMsgPBVhiVj_F3nDknOsitD9mw0jwsaYvmaJGJMxCNuhSDUzBfWEbbb3dU4I6FtKpT-5dbSY1u1WD6pbphRKihVKTCRCUXSq42ba7RA3a4bXJ0HNsabZSOe3Yyy-lgnMJkFkDppefb-IoAsV8zCtHAHXkDaUIqpsCuOweLRBNdtvtcSnqzq");'
+                ></div>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Hourly Forecast</h2>
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+              <div class="flex items-stretch p-4 gap-3">
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCvFD5eZkgHTSf_lb8wAiwDueArUd4aTALFFFdH-FWuLZCVaNhW6uqrzZcIkMkUQ_oAcp3Zn7yKAXVs3rJTL0FlyjkqCPCOItwW6inL45If7rdMTUR89wMu9BptWeqLMGSDbPly4PgRn4wi-iIG-3QC3dPlNrA3xFa9cn5YmMzFnGswij8iJ2x9S4WJqY4u3xYFifIk0QrPsSU4DfRLnd3Ue3pr8vt6nlhuptaBz1wMkCiWuNMr2CVJ-DPDrUfyIBMFxUr-GyyZsj-X");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">10 AM</p>
+                    <p class="text-[#93b2c8] text-sm font-normal leading-normal">70°</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBx1pbuFYm4v6M9ciCl48Uguo7cmRpARgKue5drHd0kXD_55M-zpWaI8sFAqbHlYCn-cx9LMdUMYGNcuQcvCOtW-x10EijUJX09wgT-cMuLUYB6OSm48z8WSKA1gfNjSrJet8ZsPNoIlFE4WcMrsMyXH23HnCd7fjwFS7dXCrRcl58pmEbuT-a2oVhEYuU7-2gzihSpV80X40f6H_Hs-Fe-a6pRNPHXzJWzBtrAAz2fRje_xE5QRBsSPchL40loj-VY7zGbiK3KEu-O");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">11 AM</p>
+                    <p class="text-[#93b2c8] text-sm font-normal leading-normal">72°</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCy9ELHnfXtD0Py4dIc8lf1_ewu7r2r28EjuzpunXxY6bSiPC_Rl0st6ZME5gR9twT1oDYG5uDfjKLO6sI6eRtVXRv5cL6_eaboAQM5dmo4VfPMOFQbdzHzMPEQcOVqHWo0awWK5d9uljtoqVw1GDV-bgQWYPq5v3lyqWbXRefB8o_YgrN9RBNkV5PeR6c2FxtKJ7Yp1QAvD6XXZnPLqXXKcgqEfaQo1_rDihUtF2Jbn-trtNbzRX8pDf0sou0ymGJXH1j18Ol7ThPt");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">12 PM</p>
+                    <p class="text-[#93b2c8] text-sm font-normal leading-normal">74°</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCmHavq_RT-CkMumOq4TG9mMypf11k8bRAvkWA0XwBW6MHGVCRHh_2gtof8iVDBOSGrx8-1lntIm4Jm_H4G2y1n8720wdOxDjL114o3tOm0nhpXvFtx_V5lrUE2_SorGtnpVHlrhatuDdjyGlZTruCvXa2ukO89qJ3wl16YnUh1kv8rt1Sqmog5XQRtijwtF-uNGI3voJIJk-fQtart8QiXPEL-mMCCw86Fo4T4AqUl3RWnTLgLO1wQgwxUNgiHPNs8LKzMP_XVJwcL");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">1 PM</p>
+                    <p class="text-[#93b2c8] text-sm font-normal leading-normal">75°</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDBM_Kr3od3eRCG2WOd7DHKBOjxC9U-DWWWkxQR-vNvv0kxob6ky6CxL74W58Su2EPYr088bAdC4j-4_emLZR6H0QnTp3MVmNGBnpDy2ltgaIfKFKp9u5eOp5_r-2QcQ-vEkEGbAjeJJogZ0msSyxHXCWhSrLs6k2VuRMuvVxHxFqtnkHoAfToYcSRD17t-3Ac-OJsrMqHdQy97NIamMyy8HsDzrFkJKbmbBXTFqUaytbY5QCHNnlRDZJtzTd4WlYn5GGpIMisDSk8I");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">2 PM</p>
+                    <p class="text-[#93b2c8] text-sm font-normal leading-normal">76°</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA9tXvGbApP2fxsQtOdIyjkv_mac5Y2TU6wKamldVF2VXWB3zXoiACcfQM5Hl2yAJsXMH794fih7TCPqWA-ej-hB7shBBsP16DwYfyRrZPEQh-lpuREsQufresymeHWQ104IDb-zXlJSR1H1AbkxKfjEv73EKraLoyPoUODMqsERnI-RC2bd3wPOeAPZ9TlNIBliyY57vc-iBnJOJq_7_fJxnizZQfHjR-fTX9b8CSjbAfBk5OXeJ8NuFdrEaHAE24ayhOMP_No7d8i");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">3 PM</p>
+                    <p class="text-[#93b2c8] text-sm font-normal leading-normal">75°</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCzoF4gCWhD_F6YAvxyCRYSZVio-NJ3uoEuaTXnjTj1I6ynFlhsh1RvHsNq30HEk8JCP1Mv-SSBoVmUgTuil5zicUkRYoUE7q9MDpsb2EPZCJ9-Pxt2woubrDo4mctSdVCdCQnuWSa-KvM7ObwFx4j4SemQervX3tBfiYMMB5Y0GmwSYA9AizhcIUzjDc9acN2c7WTkAgIjFbG6EhG1drXh5F0tCIOl_x8Bnt-xH2vwxKdODuTW5VGGhA1C3dJ_JrvEA_L4ytKBh__8");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">4 PM</p>
+                    <p class="text-[#93b2c8] text-sm font-normal leading-normal">74°</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAK_j-tCTJVg5i67KLITWcgZ7P3SwIba6rQU8eONSSZMOn-muqCC2XJ17uNtGrKhjh8siMOOwuoU-TNx-_DH1KOmRXczL-BdNCQH3FO85SHp2FEuu4OpV9srTEmtOnk_l0FJR1Xw4MyorvOT12RXwoXU6-fSAhb3QiRQAFiufuT1_eaGEJzybWruAgqsYYVKLqeUdI-Vud8N19Ln0NbNMLz2Jh9Ert6XpKrnpA6iIW3_kq-YEgMDr5HpHPpu48xzKAsU1YDODQoAshG");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">5 PM</p>
+                    <p class="text-[#93b2c8] text-sm font-normal leading-normal">72°</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDkgUhvv1qXxPzNIlvLSKV83Cz5QHOkcv4EEOKR88rV0pfeqtnNX_xKxfPGZ6VDnfsnqvjtkHZQAT7vWwAngODbP9ao6HWs60rdIIOGKoEhzUA1bi0bp81kN1p5Qrh5GIXnaZ8RCypm5HNnY8htXWiTZnkJ3CVmJTRWVmYLRQWHNvkvxFQ7M-luFvqacNy5N8J75hWcHQ40GmP3N_RoOx0gV6BIOpuYmCmPv2Vv-mPwC9OskAvJvAbSGUqPPGPm3t3jR3Jw5BLpmUjo");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">6 PM</p>
+                    <p class="text-[#93b2c8] text-sm font-normal leading-normal">70°</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBRrD-tDk_gQvIpkJ4e8O4P0zjrNZY1XzwGqIx-To4AdURkRyN_LPYJdIDRhZ0iLBzTYO68WV4gJanQyG_Bi7BpyKM8UNpqCi0F65w4o1n_SbZ6L0f3CNkVIHn-6PhSbSD9mbrVC5e3zMH2QudYmLyZF5-HpXdMAF969bzOLft31-dTf31uykmDCPOu8Q9qiJSPJHwBwpWZRgpF9nh6SsyJ3e2dQdnn7-qZvh6jxwZ4J_ooQCHsA5cOuBOvE0WJlLqs_crLOA9C2c17");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">7 PM</p>
+                    <p class="text-[#93b2c8] text-sm font-normal leading-normal">68°</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDyRfq4gMcEyAAw6Y8_cHhVF2lx17HGkmDWuqRuyIkDbtL4XMmrCHvK_HGX0B15WAfY3Co9Mghx7qsHt8GEdo4fVhXs--NYJIAFIy-bNB_c5HbFlfXGrbZumUN9vX6FjEhnWYGllbmygpCHxQ-tsFXlcPNgAmoK_GLqCBz_GZuXM7TUK_2Rw2TzClJgvsK_cODzDhK3ZSeZW973LmBEy8CqH4LG0dKh_xcYmUFkVy0BMXpw60Ty3BsfInutOwGmTQnz0p9s-zLCJA_j");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">8 PM</p>
+                    <p class="text-[#93b2c8] text-sm font-normal leading-normal">66°</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAHwtxYZe8NoL-p16LDGUwh8XGtrHD3ynuqtOSEx_FKUG3Q_NIunmQPAm6KAfJRK1LaOvuhjBqHMCH8rgIfCmF6yG3fmWIfpei3Q_BS0RNrEwTIyDW4Qw6hNGTD0Ywt8xrHMapLBhagVB7lw-7zZ2XRf00AErk_Oa3Jx9S25WKXuDQ4n1puU0EGnCxk3WZ8Q6VRk19FrOfgoD-zcRvD7Qw5ZiBVbef6lPaxSxlmxYQ6J6KK3_nXaOmtSYcotcmNDgebNm1a4DJP15tK");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">9 PM</p>
+                    <p class="text-[#93b2c8] text-sm font-normal leading-normal">64°</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">10-Day Forecast</h2>
+            <div class="px-4 py-3 @container">
+              <div class="flex overflow-hidden rounded-xl border border-[#345165] bg-[#111b22]">
+                <table class="flex-1">
+                  <thead>
+                    <tr class="bg-[#1a2832]">
+                      <th class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-120 px-4 py-3 text-left text-white w-[400px] text-sm font-medium leading-normal">Day</th>
+                      <th class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-240 px-4 py-3 text-left text-white w-[400px] text-sm font-medium leading-normal">Description</th>
+                      <th class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-360 px-4 py-3 text-left text-white w-[400px] text-sm font-medium leading-normal">High</th>
+                      <th class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-480 px-4 py-3 text-left text-white w-[400px] text-sm font-medium leading-normal">Low</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-t border-t-[#345165]">
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">Today</td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-240 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">
+                        Mostly Clear
+                      </td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-360 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">72°</td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-480 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">55°</td>
+                    </tr>
+                    <tr class="border-t border-t-[#345165]">
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">Tomorrow</td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-240 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">
+                        Partly Cloudy
+                      </td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-360 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">70°</td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-480 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">54°</td>
+                    </tr>
+                    <tr class="border-t border-t-[#345165]">
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">Wednesday</td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-240 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">Sunny</td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-360 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">75°</td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-480 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">56°</td>
+                    </tr>
+                    <tr class="border-t border-t-[#345165]">
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">Thursday</td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-240 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">Sunny</td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-360 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">78°</td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-480 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">58°</td>
+                    </tr>
+                    <tr class="border-t border-t-[#345165]">
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">Friday</td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-240 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">Sunny</td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-360 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">80°</td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-480 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">60°</td>
+                    </tr>
+                    <tr class="border-t border-t-[#345165]">
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">Saturday</td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-240 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">Sunny</td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-360 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">82°</td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-480 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">62°</td>
+                    </tr>
+                    <tr class="border-t border-t-[#345165]">
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">Sunday</td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-240 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">Sunny</td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-360 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">84°</td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-480 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">64°</td>
+                    </tr>
+                    <tr class="border-t border-t-[#345165]">
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">Monday</td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-240 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">Sunny</td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-360 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">85°</td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-480 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">65°</td>
+                    </tr>
+                    <tr class="border-t border-t-[#345165]">
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">Tuesday</td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-240 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">Sunny</td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-360 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">86°</td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-480 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">66°</td>
+                    </tr>
+                    <tr class="border-t border-t-[#345165]">
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">Wednesday</td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-240 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">Sunny</td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-360 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">87°</td>
+                      <td class="table-e97170f6-71b0-411d-a6d4-b65337132809-column-480 h-[72px] px-4 py-2 w-[400px] text-[#93b2c8] text-sm font-normal leading-normal">67°</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <style>
+                          @container(max-width:120px){.table-e97170f6-71b0-411d-a6d4-b65337132809-column-120{display: none;}}
+                @container(max-width:240px){.table-e97170f6-71b0-411d-a6d4-b65337132809-column-240{display: none;}}
+                @container(max-width:360px){.table-e97170f6-71b0-411d-a6d4-b65337132809-column-360{display: none;}}
+                @container(max-width:480px){.table-e97170f6-71b0-411d-a6d4-b65337132809-column-480{display: none;}}
+              </style>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
 
